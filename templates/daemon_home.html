@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Keyboard Heatmap - My Maker's project</title>
+    <link href="/static/stylehome.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header class="header">
+        <div class="main">
+            <div class="logo">
+                <img src="/static/sdslogo.svg">
+            </div>
+            <br>
+        </div>
+        <div class="title">
+            <div class="buttons">
+                <button style="margin-bottom:60; font-size: 40; padding:5px 30px;" onclick="runPythonScript()">Start Daemon</button> <br>
+                <a href="/static/daemon.html" class="btn" style="font-size: 40;">See Current logs</a>
+            </div>
+        </div>
+    </header>
+    <script>
+        function runPythonScript() {
+            fetch('/run_script')
+                .then(response => response.text())
+                .then(message => alert(message));
+        }
+    </script>
+</body>
+</html>

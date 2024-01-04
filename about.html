@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="stylehome.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="title" style="top: 70%;">
+        <center>
+            <p style="font-size: 240%; font-weight: bold;">About this project</h1>
+            <br><br>
+            <p style="font-size: 140%;">Making a complete working user-friendly keylogger was way more challenging than I initially thought it to be. I learned about a lot of new libraries and server-side stuff while making this project. The main daemon keylogging logic has been coded in python using 'PYNPUT' library. For the visual representation of the keylogs, I found a very nice library called 'HEATMAP.JS' after a lot of searching, it had a simple and easy to understand documentation. To make data to feed to 'HEATMAP.JS' (of form ['x', 'y', 'value']), i had to hardcode the coordinates of each key on the keyboard image inside the div and got the freq of each key typed which gave its value.</p>
+            <br>
+            <p style="font-size: 140%;">While making this project I also learned how to read data from local files into your code and play with it, but the most challenging part for me was running the python daemon script by the click of a button by user, which i had never done before. After a lot of searching i found there are multiple ways to accomplish this, AJAX, DJANGO and Flask, of these i chose flask. I had to learn about Flask apps and how to use them in web.</p>
+            <p style="font-size: 140%;">Apparently i also tried to make a JSON server to push the log data onto it, but got mulitple errors in it as log updates continuosly and doing this was going very complex, so as of now I have made the user input the log.txt file using input tag (log.txt automatically gets created upon pressing Start Daemon Button)</p>
+            <p style="font-size: 140%;">To run the Flask part i always have to run the flask app from vscode first which hosts a local server and i am not sure how will it work on other systems. So I also attached a video drive link of screen recording of the project</p>
+            <p style="font-size: 140%;">Looking forward to make more such projects and refine these as well !</p>
+            <br><br><br>
+        </center>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Keyboard Heatmap - My Maker's project</title>
+        <link rel="stylesheet" href="stylelive.css" />
+    </head>
+    <body>
+        <p style="text-align: center; font-size: 45px; font-weight:500; margin-bottom: 0%; margin-top: 40;">Keyboard Heatmap - My Maker's project</p>
+        <div id="inputarea">
+            <p style="font-size: 35px;margin-bottom: 0%;">Type your text in the Textbox.....</p>
+            <p style="font-size: 20px; color: #FF5851; font-weight: 400;">(Don't you dare backspace this banger.)</p>
+            <textarea id="typefield">Inki Pinki Ponki....Daddy bought a donkey...</textarea>
+            <br><br><br><br><br>
+            <div id="keyboard">
+
+            </div>
+        </div>
+        <script type="text/javascript">
+            var app = {};
+            app.config = {
+                exclude: true
+            };
+        </script>
+        <script src="heatmap.js"></script>
+        <script src="qwerty.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

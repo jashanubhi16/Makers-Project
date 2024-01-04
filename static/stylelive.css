@@ -1,0 +1,46 @@
+body {
+  height: 100%;
+  overflow: auto;
+  font-family:Century gothic;
+  font-size: 100%;
+  line-height: 1;
+  color: #000000;
+  zoom: 1;
+}
+#typefield {
+  width: 770px;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 25px;
+  color: #666666;
+  border: 2px solid rgb(0, 0, 0);
+  height: 125px;
+  word-wrap: break-word;
+}
+#inputarea {
+  text-align: center;
+  padding: 15px 0px 15px 0px;
+}
+#keyboard {
+  position: relative;
+  width: 800px;
+  margin: auto;
+  height: 373px;
+  bottom: 0;
+  padding: 0;
+  background-image: url(keys.jpg);
+}
+#freq{
+  align-items: center;
+}
+#freqtable{
+  text-align: center;
+  align-self: center;
+  border: 3px solid;
+  margin-left: auto;
+  margin-right: auto;
+}
+td, th{
+  border: 3px solid;
+  padding: 8px;
+}

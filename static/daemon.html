@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Keyboard Heatmap - My Maker's project</title>
+        <link rel="stylesheet" href="/static/stylelive.css" />
+        <!-- <link rel="stylesheet" 
+            href="https://pyscript.net/latest/pyscript.css" />
+        <script defer 
+            src="https://pyscript.net/latest/pyscript.js">
+        </script> -->
+    </head>
+    <body>
+        <div style="margin-top: 30; padding: 0; text-align: center;">
+            <p style="font-size: 32; margin-bottom: 0;">Click on choose file and select 'log.txt'</p>
+            <p style="font-size: 24;">Then click on View Heatmap</p>
+            <input type="file" id = "logs">
+            <button id = "btn">View Heatmap</button>
+        </div>
+        <div id="inputarea">
+            <!-- <input id="log" type="file" style="color: black"/> -->
+            <!-- <button onclick="setText()">Load your logs</button>
+            <br> -->
+            <textarea id="typefield" autofocus style="height: 35px; width: 770px; margin-left: 0;"></textarea>
+            <br><br><br><br>
+            <div id="keyboard">
+
+            </div>
+        </div>
+        <div style="margin-left: auto; margin-right: auto;">
+            <button id = "stats" style="margin:60; font-size: 30; padding:5px 30px;">View Stats</button>
+        </div>
+        <div id = "freq">
+            
+        </div>
+        <script type="text/javascript">
+            // function loadText(){
+                document.getElementById("logs").addEventListener('change', function(){
+                    let f = new FileReader();
+                    f.onload = function(){
+                        document.getElementById("typefield").value = f.result;
+                    }
+                    f.readAsText(this.files[0]);
+                })
+            // }
+        </script>
+        <!-- <py-script>
+
+            pyscript.write("textfield", logText())
+
+        </py-script> -->
+        <script type="text/javascript">
+            var app = {};
+            app.config = {
+                exclude: true
+            };
+        </script>
+        <script src="/static/heatmap.js"></script>
+        <script src="/static/qwerty.js"></script>
+        <script src="/static/app.js"></script>
+    </body>
+</html>
